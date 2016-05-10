@@ -289,6 +289,8 @@ a:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+  
 }
 
 #headerwrap h1 {
@@ -300,6 +302,23 @@ a:after {
 	font-size: 95px;
 	/*font-weight: bold;*/
 	text-shadow: 2px 2px 2px #000;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: name; 
+    -webkit-animation-duration: 2.5s;
+    
+}
+
+@-webkit-keyframes name {
+    0% {font-size: 48px;}
+    100% {font-size: 96px;}
+}
+@-webkit-keyframes background {
+    0% {background-color: blue;}
+    100% {background-color: transparent;;} 
+}
+@-webkit-keyframes title {
+    0% {font-size: 15px;}
+    100% {font-size: 30px;}
 }
 
 #headerwrap p {
@@ -311,6 +330,8 @@ a:after {
 	letter-spacing: 3px;
 	margin-left: 15px;
 	text-shadow: 1px 1px 1px #000;
+    -webkit-animation-name: title; 
+    -webkit-animation-duration: 4s;
 }
 
 #greywrap {
